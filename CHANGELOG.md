@@ -7,3 +7,4 @@
 - 2026-05-20: Add login and registration API endpoints
 - 2026-05-20: Create Property model with robust schema
 - 2026-05-21: Build Property API controllers for CRUD
+- 2026-05-21: Add pagination and filtering to Property API
