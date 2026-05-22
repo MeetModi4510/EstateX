@@ -8,3 +8,4 @@
 - 2026-05-20: Create Property model with robust schema
 - 2026-05-21: Build Property API controllers for CRUD
 - 2026-05-21: Add pagination and filtering to Property API
+- 2026-05-22: Setup Vite React frontend and Tailwind CSS
