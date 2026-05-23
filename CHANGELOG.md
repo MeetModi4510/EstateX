@@ -10,3 +10,4 @@
 - 2026-05-21: Add pagination and filtering to Property API
 - 2026-05-22: Setup Vite React frontend and Tailwind CSS
 - 2026-05-22: Configure React Router and basic layouts
+- 2026-05-23: Build Navigation bar and Footer components
