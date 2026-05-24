@@ -13,3 +13,4 @@
 - 2026-05-23: Build Navigation bar and Footer components
 - 2026-05-23: Implement Landing Page hero section
 - 2026-05-24: Create reusable Property Card component
+- 2026-05-24: Build Search and Filter UI sidebar
