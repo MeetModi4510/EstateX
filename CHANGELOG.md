@@ -17,3 +17,4 @@
 - 2026-05-25: Integrate frontend search with backend API
 - 2026-05-25: Refactor Property Card for better responsive design
 - 2026-05-26: Add image upload functionality using Cloudinary
+- 2026-05-26: Implement multi-image upload for properties
