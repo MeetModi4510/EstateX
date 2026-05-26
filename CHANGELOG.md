@@ -16,3 +16,4 @@
 - 2026-05-24: Build Search and Filter UI sidebar
 - 2026-05-25: Integrate frontend search with backend API
 - 2026-05-25: Refactor Property Card for better responsive design
+- 2026-05-26: Add image upload functionality using Cloudinary
