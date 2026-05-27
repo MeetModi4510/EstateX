@@ -19,3 +19,4 @@
 - 2026-05-26: Add image upload functionality using Cloudinary
 - 2026-05-26: Implement multi-image upload for properties
 - 2026-05-26: Create Add Property multi-step wizard UI
+- 2026-05-27: Wire up Add Property wizard to backend API
