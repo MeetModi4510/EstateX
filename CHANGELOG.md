@@ -23,3 +23,4 @@
 - 2026-05-27: Build User Dashboard layout and routing
 - 2026-05-28: Implement My Properties list view for owners
 - 2026-05-28: Add edit and delete functionality for properties
+- 2026-05-29: Create Broker model and roles
