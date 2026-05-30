@@ -25,3 +25,4 @@
 - 2026-05-28: Add edit and delete functionality for properties
 - 2026-05-29: Create Broker model and roles
 - 2026-05-29: Build Broker Dashboard and CRM layout
+- 2026-05-30: Implement lead management data structures
