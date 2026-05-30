@@ -26,3 +26,4 @@
 - 2026-05-29: Create Broker model and roles
 - 2026-05-29: Build Broker Dashboard and CRM layout
 - 2026-05-30: Implement lead management data structures
+- 2026-05-30: Add Lead Card and Pipeline UI components
