@@ -28,3 +28,4 @@
 - 2026-05-30: Implement lead management data structures
 - 2026-05-30: Add Lead Card and Pipeline UI components
 - 2026-05-31: Wire up lead status updates to API
+- 2026-05-31: Create Visit scheduling schema and routes
