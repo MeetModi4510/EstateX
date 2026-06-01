@@ -30,3 +30,4 @@
 - 2026-05-31: Wire up lead status updates to API
 - 2026-05-31: Create Visit scheduling schema and routes
 - 2026-06-01: Build Visit booking modal on Property Details
+- 2026-06-01: Implement Visit approval workflow for brokers
