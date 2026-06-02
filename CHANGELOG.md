@@ -31,3 +31,4 @@
 - 2026-05-31: Create Visit scheduling schema and routes
 - 2026-06-01: Build Visit booking modal on Property Details
 - 2026-06-01: Implement Visit approval workflow for brokers
+- 2026-06-02: Create Deal model for successful closures
