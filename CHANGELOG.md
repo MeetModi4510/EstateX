@@ -33,3 +33,4 @@
 - 2026-06-01: Implement Visit approval workflow for brokers
 - 2026-06-02: Create Deal model for successful closures
 - 2026-06-02: Build Admin dashboard layout
+- 2026-06-03: Implement property approval workflows for Admin
