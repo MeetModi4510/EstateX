@@ -35,3 +35,4 @@
 - 2026-06-02: Build Admin dashboard layout
 - 2026-06-03: Implement property approval workflows for Admin
 - 2026-06-03: Add Admin user management tables
+- 2026-06-04: Refactor frontend API client for better error handling
