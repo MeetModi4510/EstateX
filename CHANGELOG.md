@@ -37,3 +37,4 @@
 - 2026-06-03: Add Admin user management tables
 - 2026-06-04: Refactor frontend API client for better error handling
 - 2026-06-04: Add toast notifications for user actions
+- 2026-06-05: Implement password reset backend logic
