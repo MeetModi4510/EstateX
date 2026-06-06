@@ -40,3 +40,4 @@
 - 2026-06-05: Implement password reset backend logic
 - 2026-06-05: Build Forgot Password and Reset Password UI
 - 2026-06-06: Add Property Analytics models
+- 2026-06-06: Implement view tracking API endpoint
