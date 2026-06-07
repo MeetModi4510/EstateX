@@ -42,3 +42,4 @@
 - 2026-06-06: Add Property Analytics models
 - 2026-06-06: Implement view tracking API endpoint
 - 2026-06-07: Build Recharts integration for Owner Analytics
+- 2026-06-07: Add Top Performing listing logic
