@@ -41,3 +41,4 @@
 - 2026-06-05: Build Forgot Password and Reset Password UI
 - 2026-06-06: Add Property Analytics models
 - 2026-06-06: Implement view tracking API endpoint
+- 2026-06-07: Build Recharts integration for Owner Analytics
