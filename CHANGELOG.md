@@ -46,3 +46,4 @@
 - 2026-06-08: Optimize MongoDB indexes for search performance
 - 2026-06-08: Fix layout shift issues on Landing Page
 - 2026-06-09: Improve mobile responsiveness of Search Filters
+- 2026-06-09: Add loading skeletons for property fetching
