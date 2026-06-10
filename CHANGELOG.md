@@ -48,3 +48,4 @@
 - 2026-06-09: Improve mobile responsiveness of Search Filters
 - 2026-06-09: Add loading skeletons for property fetching
 - 2026-06-10: Implement empty states for dashboards
+- 2026-06-10: Add Save Property functionality for buyers
