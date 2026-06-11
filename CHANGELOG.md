@@ -49,3 +49,4 @@
 - 2026-06-09: Add loading skeletons for property fetching
 - 2026-06-10: Implement empty states for dashboards
 - 2026-06-10: Add Save Property functionality for buyers
+- 2026-06-11: Build Saved Properties page
