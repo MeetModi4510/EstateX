@@ -50,3 +50,4 @@
 - 2026-06-10: Implement empty states for dashboards
 - 2026-06-10: Add Save Property functionality for buyers
 - 2026-06-11: Build Saved Properties page
+- 2026-06-11: Implement Contact Broker modal on Property Details
