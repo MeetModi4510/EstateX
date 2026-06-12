@@ -51,3 +51,4 @@
 - 2026-06-10: Add Save Property functionality for buyers
 - 2026-06-11: Build Saved Properties page
 - 2026-06-11: Implement Contact Broker modal on Property Details
+- 2026-06-12: Add Home Loan EMI Calculator component
