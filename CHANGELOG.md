@@ -52,3 +52,4 @@
 - 2026-06-11: Build Saved Properties page
 - 2026-06-11: Implement Contact Broker modal on Property Details
 - 2026-06-12: Add Home Loan EMI Calculator component
+- 2026-06-12: Integrate Leaflet maps for property location
