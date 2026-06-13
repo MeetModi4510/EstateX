@@ -54,3 +54,4 @@
 - 2026-06-12: Add Home Loan EMI Calculator component
 - 2026-06-12: Integrate Leaflet maps for property location
 - 2026-06-13: Add amenities grid and quick info components
+- 2026-06-13: Fix state management bug in multi-step wizard
