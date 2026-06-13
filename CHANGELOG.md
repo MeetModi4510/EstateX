@@ -53,3 +53,4 @@
 - 2026-06-11: Implement Contact Broker modal on Property Details
 - 2026-06-12: Add Home Loan EMI Calculator component
 - 2026-06-12: Integrate Leaflet maps for property location
+- 2026-06-13: Add amenities grid and quick info components
