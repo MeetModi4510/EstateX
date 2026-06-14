@@ -55,3 +55,4 @@
 - 2026-06-12: Integrate Leaflet maps for property location
 - 2026-06-13: Add amenities grid and quick info components
 - 2026-06-13: Fix state management bug in multi-step wizard
+- 2026-06-14: Update Tailwind config with custom color palette
