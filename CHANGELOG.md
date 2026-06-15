@@ -57,3 +57,4 @@
 - 2026-06-13: Fix state management bug in multi-step wizard
 - 2026-06-14: Update Tailwind config with custom color palette
 - 2026-06-14: Add framer-motion animations to page transitions
+- 2026-06-15: Refactor CSS variables for dark mode preparation
