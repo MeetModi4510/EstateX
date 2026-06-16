@@ -59,3 +59,4 @@
 - 2026-06-14: Add framer-motion animations to page transitions
 - 2026-06-15: Refactor CSS variables for dark mode preparation
 - 2026-06-15: Fix token expiration redirect bug
+- 2026-06-16: Clean up console logs and unused imports
