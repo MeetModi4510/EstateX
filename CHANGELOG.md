@@ -61,3 +61,4 @@
 - 2026-06-15: Fix token expiration redirect bug
 - 2026-06-16: Clean up console logs and unused imports
 - 2026-06-16: Update README with project setup instructions
+- 2026-06-17: Add deployment configuration for Vercel/Render
