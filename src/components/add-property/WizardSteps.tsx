@@ -320,8 +320,8 @@ export const StepMedia: React.FC<StepProps> = ({ data, updateData, onValidChange
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    onValidChange(data.images.length >= 3);
-  }, [data.images, onValidChange]);
+    onValidChange(true); // Images are optional now
+  }, [onValidChange]);
 
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     if (!e.target.files || e.target.files.length === 0) return;
@@ -393,7 +393,7 @@ export const StepMedia: React.FC<StepProps> = ({ data, updateData, onValidChange
     <div className="py-8">
       <div className="mb-8">
         <h2 className="text-3xl font-display font-bold text-neutral-primary mb-2">Showcase your property</h2>
-        <p className="text-neutral-secondary">Great photos help your property stand out. Add at least 3 images to proceed.</p>
+        <p className="text-neutral-secondary">Great photos help your property stand out. You can upload images now or skip this step.</p>
       </div>
 
       <div className="space-y-8">
