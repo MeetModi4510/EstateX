@@ -28,7 +28,7 @@ export const uploadImages = async (req: AuthRequest, res: Response) => {
 
     for (const file of files) {
       let cloudinaryResult;
-      if (process.env.CLOUDINARY_CLOUD_NAME && process.env.CLOUDINARY_API_KEY) {
+      if (process.env.CLOUDINARY_CLOUD_NAME && process.env.CLOUDINARY_API_KEY && process.env.CLOUDINARY_API_SECRET) {
         cloudinaryResult = await new Promise<any>((resolve, reject) => {
           const uploadStream = cloudinary.uploader.upload_stream(
             { folder: 'estatex_properties', fetch_format: 'auto', quality: 'auto' },
@@ -37,7 +37,7 @@ export const uploadImages = async (req: AuthRequest, res: Response) => {
               resolve(result);
             }
           );
-          Readable.from(file.buffer).pipe(uploadStream);
+          uploadStream.end(file.buffer);
         });
       } else {
         cloudinaryResult = {
@@ -84,7 +84,7 @@ export const deleteImage = async (req: AuthRequest, res: Response) => {
     }
 
     // Delete from Cloudinary if configured
-    if (process.env.CLOUDINARY_CLOUD_NAME && process.env.CLOUDINARY_API_KEY && !image.publicId.startsWith('mock_id_')) {
+    if (process.env.CLOUDINARY_CLOUD_NAME && process.env.CLOUDINARY_API_KEY && process.env.CLOUDINARY_API_SECRET && !image.publicId.startsWith('mock_id_')) {
       await cloudinary.uploader.destroy(image.publicId);
     }
 

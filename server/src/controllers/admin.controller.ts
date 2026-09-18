@@ -174,7 +174,7 @@ export const createBroker = async (req: AuthRequest, res: Response) => {
     
     // Generate unique Broker ID
     const count = await BrokerProfile.countDocuments();
-    const brokerId = `EST-BRK-${1001 + count}`;
+    const brokerId = `BRK-${1001 + count}`;
     
     const profile = new BrokerProfile({
       userId: user._id,

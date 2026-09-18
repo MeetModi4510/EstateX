@@ -152,8 +152,12 @@ export const deleteProperty = async (req: AuthRequest, res: Response) => {
     // Delete associated images from Cloudinary and Database
     const images = await PropertyImage.find({ propertyId });
     for (const image of images) {
-      if (image.publicId) {
-        await cloudinary.uploader.destroy(image.publicId);
+      if (image.publicId && !image.publicId.startsWith('mock_id_')) {
+        try {
+          await cloudinary.uploader.destroy(image.publicId);
+        } catch (err) {
+          console.error('Failed to delete image from Cloudinary:', err);
+        }
       }
     }
     await PropertyImage.deleteMany({ propertyId });
