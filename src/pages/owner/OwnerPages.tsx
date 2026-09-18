@@ -231,7 +231,7 @@ export const Analytics: React.FC = () => {
                       <YAxis stroke="#888888" fontSize={12} tickLine={false} axisLine={false} allowDecimals={false} />
                       <Tooltip 
                         contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
-                        labelFormatter={(val) => new Date(val).toLocaleDateString()}
+                        labelFormatter={(val: any) => new Date(val).toLocaleDateString()}
                       />
                       <Line type="monotone" dataKey="views" stroke="#5C4B41" strokeWidth={3} dot={{ r: 4, fill: '#5C4B41' }} activeDot={{ r: 6 }} />
                     </LineChart>
