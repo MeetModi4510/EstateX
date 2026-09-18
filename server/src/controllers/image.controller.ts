@@ -28,18 +28,29 @@ export const uploadImages = async (req: AuthRequest, res: Response) => {
 
     for (const file of files) {
       let cloudinaryResult;
+      
       if (process.env.CLOUDINARY_CLOUD_NAME && process.env.CLOUDINARY_API_KEY && process.env.CLOUDINARY_API_SECRET) {
-        cloudinaryResult = await new Promise<any>((resolve, reject) => {
-          const uploadStream = cloudinary.uploader.upload_stream(
-            { folder: 'estatex_properties', fetch_format: 'auto', quality: 'auto' },
-            (error, result) => {
-              if (error) return reject(error);
-              resolve(result);
-            }
-          );
-          uploadStream.end(file.buffer);
-        });
+        try {
+          cloudinaryResult = await new Promise<any>((resolve, reject) => {
+            const uploadStream = cloudinary.uploader.upload_stream(
+              { folder: 'estatex_properties', fetch_format: 'auto', quality: 'auto' },
+              (error, result) => {
+                if (error) return reject(error);
+                resolve(result);
+              }
+            );
+            uploadStream.end(file.buffer);
+          });
+        } catch (cloudErr: any) {
+          console.error('Cloudinary upload error:', cloudErr);
+          return res.status(500).json({ 
+            message: 'Image upload failed at Cloudinary. Check API keys.', 
+            error: cloudErr.message 
+          });
+        }
       } else {
+        // Fallback if Cloudinary is not configured
+        console.warn('Cloudinary not configured. Falling back to base64 storage. This is NOT recommended for production.');
         cloudinaryResult = {
           secure_url: `data:${file.mimetype};base64,${file.buffer.toString('base64')}`,
           public_id: `mock_id_${Date.now()}_${Math.random()}`
@@ -63,9 +74,9 @@ export const uploadImages = async (req: AuthRequest, res: Response) => {
     }
 
     res.status(201).json({ message: 'Images uploaded successfully', images: uploadedImages });
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error uploading images:', error);
-    res.status(500).json({ message: 'Server error during upload' });
+    res.status(500).json({ message: 'Server error during upload', error: error.message });
   }
 };
 

@@ -19,9 +19,8 @@ export const BrokerLogin: React.FC = () => {
     setLoading(true);
     
     try {
-      // Send the 'BRK-' prefix along with the ID they typed
-      const fullId = `BRK-${brokerId}`;
-      const data = await brokerLogin({ brokerId: fullId, password });
+      // Send the exact ID they typed
+      const data = await brokerLogin({ brokerId, password });
       
       // Store real auth token and user
       localStorage.setItem('token', data.token);
@@ -91,14 +90,13 @@ export const BrokerLogin: React.FC = () => {
               <div>
                 <label className="block text-sm font-bold text-neutral-primary mb-1.5">Broker ID</label>
                 <div className="relative">
-                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-neutral-secondary font-bold text-sm">BRK-</span>
                   <input 
                     type="text" 
                     required
-                    placeholder="0000"
+                    placeholder="e.g. BRK-1001"
                     value={brokerId}
                     onChange={(e) => setBrokerId(e.target.value)}
-                    className="w-full pl-14 pr-4 py-3 rounded-xl border border-neutral-border focus:border-primary focus:bg-white bg-neutral-bg/50 outline-none transition-colors font-medium"
+                    className="w-full px-4 py-3 rounded-xl border border-neutral-border focus:border-primary focus:bg-white bg-neutral-bg/50 outline-none transition-colors font-medium"
                   />
                 </div>
               </div>
